@@ -1,0 +1,1139 @@
+/* =====================================================
+   GENERAL SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #fff8fc;
+
+    color: #222;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+nav {
+    background-color: #180035;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+nav h2 {
+    color: white;
+
+    font-size: 25px;
+}
+
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+
+nav ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #ffd32a;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   FAMILY PHOTO SLIDESHOW
+===================================================== */
+
+.hero {
+    min-height: 90vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 70px 10%;
+
+    color: white;
+
+    background-image:
+
+        linear-gradient(
+            rgba(24, 0, 53, 0.65),
+            rgba(24, 0, 53, 0.75)
+        ),
+
+        url("WhatsApp Image 2026-08-17 at 10.48.43.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    animation: familySlideshow 20s infinite;
+}
+
+
+/* =====================================================
+   FAMILY PHOTO SLIDESHOW
+===================================================== */
+
+@keyframes familySlideshow {
+
+
+    /* BROTHER */
+
+    0% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 10.48.43.jpeg");
+
+    }
+
+
+    /* MOM */
+
+    20% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 10.49.44.jpeg");
+
+    }
+
+
+    /* DAD */
+
+    40% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 10.53.54.jpeg");
+
+    }
+
+
+    /* SISTER - UPDATED PHOTO */
+
+    60% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 11.17.08.jpeg");
+
+    }
+
+
+    /* BROTHER / FAMILY */
+
+    80% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 10.53.39.jpeg");
+
+    }
+
+
+    /* BACK TO BROTHER */
+
+    100% {
+
+        background-image:
+
+            linear-gradient(
+                rgba(24, 0, 53, 0.65),
+                rgba(24, 0, 53, 0.75)
+            ),
+
+            url("WhatsApp Image 2026-08-17 at 10.48.43.jpeg");
+
+    }
+
+}
+
+
+/* =====================================================
+   HERO TEXT
+===================================================== */
+
+.hero-text {
+    width: 50%;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.small-title {
+    color: #ffd32a;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+.hero h1 {
+    font-size: 70px;
+
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        3px 3px 10px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+.hero h1 span {
+    color: #ffd32a;
+}
+
+
+.hero h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        2px 2px 8px
+        rgba(0, 0, 0, 0.6);
+}
+
+
+.hero-description {
+    max-width: 550px;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        2px 2px 8px
+        rgba(0, 0, 0, 0.8);
+}
+
+
+/* =====================================================
+   BIRTHDAY BUTTON
+===================================================== */
+
+.birthday-button {
+    display: inline-block;
+
+    background-color: #ffd32a;
+
+    color: #180035;
+
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.birthday-button:hover {
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.4);
+}
+
+
+/* =====================================================
+   BROTHER'S PHOTO
+===================================================== */
+
+.hero-image {
+    width: 40%;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 8px solid white;
+
+    box-shadow:
+        0 20px 40px
+        rgba(0, 0, 0, 0.5);
+
+    transition: 0.5s;
+}
+
+
+.hero-image img:hover {
+    transform:
+        scale(1.03)
+        rotate(1deg);
+}
+
+
+/* =====================================================
+   FLOATING BALLOONS
+===================================================== */
+
+.floating-balloon {
+    position: absolute;
+
+    font-size: 70px;
+
+    z-index: 3;
+
+    animation:
+        float 4s infinite ease-in-out;
+}
+
+
+.balloon-one {
+    left: 3%;
+
+    top: 20%;
+}
+
+
+.balloon-two {
+    right: 3%;
+
+    top: 15%;
+
+    animation-delay: 1s;
+}
+
+
+.balloon-three {
+    left: 45%;
+
+    bottom: 5%;
+
+    animation-delay: 2s;
+}
+
+
+/* =====================================================
+   MESSAGE SECTION
+===================================================== */
+
+.message-section {
+    padding: 80px 10%;
+
+    text-align: center;
+
+    background-color: #fff5fb;
+}
+
+
+.message-section h2 {
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+    color: #3d087b;
+}
+
+
+.message-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.1);
+
+    border-left:
+        6px solid #6a0dad;
+}
+
+
+.message-box p {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+
+.message-box h3 {
+    color: #6a0dad;
+
+    font-size: 25px;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   FAMILY SECTION
+===================================================== */
+
+.family-section {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: #f5ecff;
+}
+
+
+.family-section h2 {
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+    color: #3d087b;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   FAMILY CARDS
+===================================================== */
+
+.card {
+    background-color: white;
+
+    padding: 25px 20px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.1);
+
+    transition: 0.4s;
+}
+
+
+.card:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+.family-photo {
+    width: 130px;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #ffd32a;
+
+    margin-bottom: 15px;
+
+    transition: 0.4s;
+}
+
+
+.card:hover .family-photo {
+    transform:
+        scale(1.08);
+}
+
+
+.card-icon {
+    font-size: 35px;
+
+    margin-bottom: 5px;
+}
+
+
+.card h3 {
+    color: #4b0082;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+
+.card p {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+
+.card span {
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   MEMORIES SECTION
+===================================================== */
+
+.memories-section {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: #fffaf0;
+}
+
+
+.memories-section h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+    color: #3d087b;
+}
+
+
+.section-intro {
+    margin-bottom: 45px;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.photo {
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.1);
+
+    transition: 0.4s;
+}
+
+
+.photo:hover {
+    transform:
+        translateY(-10px)
+        rotate(1deg);
+
+    box-shadow:
+        0 20px 35px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.photo img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: 0.4s;
+}
+
+
+.photo:hover img {
+    transform:
+        scale(1.03);
+}
+
+
+.photo h3 {
+    margin-top: 15px;
+
+    color: #4b0082;
+
+    font-size: 22px;
+}
+
+
+.photo p {
+    color: #666;
+
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   WARM FAMILY MESSAGE
+===================================================== */
+
+.warm-message {
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    padding: 50px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    border-top:
+        6px solid #6a0dad;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+
+.heart-icon {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+
+.warm-message h3 {
+    color: #4b0082;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+.warm-message p {
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+}
+
+
+.warm-message h4 {
+    color: #6a0dad;
+
+    font-size: 22px;
+
+    line-height: 1.7;
+
+    margin-top: 30px;
+}
+
+
+.message-signature {
+    margin-top: 30px;
+
+    color: #444;
+
+    font-size: 20px;
+}
+
+
+.message-signature strong {
+    color: #6a0dad;
+
+    font-size: 23px;
+}
+
+
+/* =====================================================
+   FINAL SECTION
+===================================================== */
+
+.final-section {
+    min-height: 450px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #180035,
+            #6a0dad
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.final-section h2 {
+    color: #ffd32a;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.final-section p {
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin:
+        0 auto 25px;
+}
+
+
+.final-section h3 {
+    font-size: 25px;
+}
+
+
+.final-section h4 {
+    margin-top: 25px;
+
+    font-size: 22px;
+}
+
+
+.gift {
+    font-size: 70px;
+
+    margin-top: 25px;
+
+    animation:
+        bounce 1.5s infinite;
+}
+
+
+.balloon {
+    position: absolute;
+
+    font-size: 80px;
+
+    animation:
+        float 4s infinite ease-in-out;
+}
+
+
+.balloon-left {
+    left: 8%;
+
+    top: 40px;
+}
+
+
+.balloon-right {
+    right: 8%;
+
+    bottom: 40px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: #0d001c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes float {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-25px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+@keyframes bounce {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-15px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    0% {
+        transform:
+            scale(1);
+    }
+
+    25% {
+        transform:
+            scale(1.15);
+    }
+
+    50% {
+        transform:
+            scale(1);
+    }
+
+    75% {
+        transform:
+            scale(1.15);
+    }
+
+    100% {
+        transform:
+            scale(1);
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav ul {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding:
+            60px 5%;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .hero-image {
+        width: 75%;
+    }
+
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+
+    nav ul {
+        gap: 10px;
+    }
+
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+
+    .hero {
+        padding:
+            50px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    .hero-image {
+        width: 90%;
+    }
+
+
+    .hero-image img {
+        height: 400px;
+    }
+
+
+    .message-section,
+    .family-section,
+    .memories-section {
+        padding:
+            60px 20px;
+    }
+
+
+    .message-section h2,
+    .family-section h2,
+    .memories-section h2 {
+        font-size: 30px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .warm-message {
+        padding:
+            30px 20px;
+
+        margin-top: 50px;
+    }
+
+
+    .warm-message h3 {
+        font-size: 26px;
+    }
+
+
+    .warm-message p {
+        font-size: 16px;
+    }
+
+
+    .warm-message h4 {
+        font-size: 19px;
+    }
+
+
+    .final-section {
+        padding:
+            70px 20px;
+    }
+
+
+    .final-section h2 {
+        font-size: 32px;
+    }
+
+
+    .final-section p {
+        font-size: 17px;
+    }
+
+
+    .balloon-left {
+        left: 2%;
+    }
+
+
+    .balloon-right {
+        right: 2%;
+    }
+
+}
